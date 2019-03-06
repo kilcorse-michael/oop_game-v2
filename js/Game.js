@@ -41,6 +41,10 @@
     */
 
     startGame(){
+      document.querySelector(`#overlay`).style.display = 'none';
+      this.activePhrase = this.getRandomPhrase();
+      this.activePhrase.addPhraseToDisplay();
+
 
     };
     /**
@@ -74,4 +78,4 @@
         return phrases;
 
     };
- }
+ };

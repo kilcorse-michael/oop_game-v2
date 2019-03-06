@@ -1,10 +1,8 @@
 /* Treehouse FSJS Techdegree
  * Project 4 - OOP Game App
  * app.js */
-
-
-
- const game = new Game();
- game.phrases.forEach((phrase, index) => {
- console.log(`Phrase ${index} - phrase: ${phrase.phrase}`);
- });
+let game;
+document.querySelector(`#btn__reset`).addEventListener(`click`, function(){
+  game = new Game();
+  game.startGame();
+})
