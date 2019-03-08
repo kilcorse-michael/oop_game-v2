@@ -105,8 +105,6 @@
       const lettersArray = document.querySelectorAll(`.hide`);
       const button = document.querySelector(`#btn__reset`)
       let overlay = document.querySelector(`#overlay`);
-
-
       // making the overlay display visible
       overlay.style.display = 'block'
       // if gameWon === true then the start button is altered so that it reloads the window object
